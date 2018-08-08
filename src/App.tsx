@@ -1,19 +1,16 @@
 import React,{ Component } from 'react';
-import User from './components/User';
-import './css/App.css';
+import { Container } from 'semantic-ui-react'
+import About from './components/About/About'
+import Education from './components/Education/Education'
 
 class App extends Component {
   public render() {
     return (
-      <div className="App container">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-        <User name="abdelhedi" />
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </div>
+      <Container>
+        <br/>
+          <About />
+        <Education />
+      </Container>
     );
   }
 }
